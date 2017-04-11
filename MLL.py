@@ -54,14 +54,17 @@ def plotNLL(variables, option, sigma, data):
            
     if(option == 0):
         #create plot and set title
+        plt.figure(0)
         plt.title('NLL Variation for Decay Fraction')
         plt.xlabel('decay fraction of peak 1')
     elif(option == 1):
         #create plot and set title
+        plt.figure(1)
         plt.title('NLL Variation for tau1')
         plt.xlabel('tau1 [s]')
     elif(option == 2):
         #create plot and set title
+        plt.figure(2)
         plt.title('NLL Variation for tau2')
         plt.xlabel('tau2 [s]')
     #set up the rest of the plot details
